@@ -1,0 +1,27 @@
+.img-fluid {
+  width: 100%;
+  object-fit: cover;
+}
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-title {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.card-text {
+  color: #666;
+  line-height: 1.8;
+}
+.row.mb-5 {
+  margin-bottom: 3rem !important;
+}
+.align-items-center {
+  align-items: center !important;
+}

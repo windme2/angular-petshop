@@ -1,0 +1,126 @@
+/* Carousel Caption */
+.carousel-caption {
+  bottom: 20px;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Smooth Carousel Transitions */
+.smooth-carousel .carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+  z-index: 10;
+  width: auto;
+  height: auto;
+  background: none;
+  opacity: 0.8;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.05);
+}
+
+#petCarousel .carousel-control-prev,
+#petCarousel .carousel-control-next {
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  opacity: 0.8;
+}
+
+#petCarousel .carousel-control-prev {
+  top: 50%;
+  left: 10px;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+#petCarousel .carousel-control-next {
+  top: 50%;
+  right: 10px;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+#petCarousel .carousel-control-prev:hover,
+#petCarousel .carousel-control-next:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* Carousel Preview */
+.carousel-preview-prev,
+.carousel-preview-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.carousel-preview-prev {
+  left: -200px;
+}
+
+.carousel-preview-next {
+  right: -200px;
+}
+
+.carousel-preview-prev:hover,
+.carousel-preview-next:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* Container Fluid */
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+/* Button Styling */
+.btn-lg {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}

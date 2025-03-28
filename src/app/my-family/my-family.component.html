@@ -1,0 +1,72 @@
+<div class="row">
+  <div class="col-12">
+    <h1 class="text-center mb-4 text-dark">My Family</h1>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="card shadow-lg border-0">
+    <div class="card-body p-4">
+      <div class="d-flex justify-content-center mb-4">
+        <div class="btn-group" role="group">
+          <button
+            type="button"
+            class="btn"
+            [ngClass]="{
+              'btn-primary': activeType === 'Dog',
+              'btn-outline-primary': activeType !== 'Dog'
+            }"
+            (click)="setActiveType('Dog')"
+          >
+            Dogs
+          </button>
+          <button
+            type="button"
+            class="btn"
+            [ngClass]="{
+              'btn-primary': activeType === 'Cat',
+              'btn-outline-primary': activeType !== 'Cat'
+            }"
+            (click)="setActiveType('Cat')"
+          >
+            Cats
+          </button>
+        </div>
+      </div>
+
+      <!-- Pet Cards -->
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <div
+          *ngFor="let pet of filteredPets"
+          class="card border-0 shadow-sm"
+          style="width: 18rem"
+        >
+          <img
+            [src]="pet.image"
+            class="card-img-top"
+            alt="{{ pet.name }}"
+            style="height: 200px; object-fit: cover"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title text-dark mb-3">{{ pet.name }}</h5>
+            <ul class="list-unstyled">
+              <li>
+                <strong>Type:</strong>
+                <span class="text-dark">{{ pet.type }}</span>
+              </li>
+              <li>
+                <strong>Breed:</strong>
+                <span class="text-dark">{{ pet.breed }}</span>
+              </li>
+              <li>
+                <strong>Price:</strong>
+                <span class="text-dark">{{ pet.price | number }} THB</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary mt-3 w-100">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
