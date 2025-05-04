@@ -1,6 +1,6 @@
 # 🐾 Angular PetShop 🏡
 
-### Bringing happiness and warmth to pet owners with a seamless online shopping experience. 💖
+### Bringing happiness and warmth to pet owners with a seamless online shopping experience.
 
 
 ## 📌 Features
