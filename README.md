@@ -22,7 +22,7 @@ This project is developed for skill enhancement, and some features may not be fu
 
 1️⃣ **Clone the repository**
 ```sh
-git clone https://github.com/your-username/angular-petshop.git
+git clone https://github.com/windme2/angular-petshop.git
 cd angular-petshop
 ```
 
